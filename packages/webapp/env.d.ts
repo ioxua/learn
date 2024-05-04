@@ -2,6 +2,8 @@
 
 import { type IStaticMethods } from "preline/preline";
 
+declare module 'preline/plugin';
+
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;

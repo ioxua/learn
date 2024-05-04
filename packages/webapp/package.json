@@ -7,6 +7,7 @@
     "build": "npm run build:i18n && npm run build:css && remix vite:build",
     "build:i18n": "paraglide-js compile --project ./project.inlang --outdir ./app/i18n/paraglide",
     "build:css": "tailwindcss --minify -i ./app/styles/index.css -o ./app/styles.css",
+    "build:cms": "tinacms dev",
     "dev": "conc -n remix,i18n,tailwind -c auto \"npm:dev:remix\" \"npm:dev:i18n\" \"npm:dev:css\"",
     "dev:remix": "remix vite:dev",
     "dev:css": "tailwindcss -w -i ./app/styles/index.css -o ./app/styles.css",
@@ -20,6 +21,7 @@
     "typegen": "wrangler types"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
     "@kinde-oss/kinde-auth-remix-sdk": "^1.0.2-alpha.1",
     "@remix-run/cloudflare": "^2.7.2",
     "@remix-run/cloudflare-pages": "^2.7.2",
@@ -34,13 +36,16 @@
     "jwks-rsa": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hotkeys-hook": "^4.5.0"
+    "react-hotkeys-hook": "^4.5.0",
+    "tinacms": "^1.5.28"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240222.0",
     "@inlang/paraglide-js": "1.2.5",
     "@remix-run/dev": "^2.7.2",
     "@tailwindcss/forms": "^0.5.7",
+    "@tinacms/cli": "^1.5.39",
+    "@types/node": "^20.11.24",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",

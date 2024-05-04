@@ -1,0 +1,9 @@
+:root {
+  --base-font-size: 16px;
+}
+
+html {
+  background-color: var(--base-bg);
+  color: var(--base-text);
+  font-size: var(--base-font-size)
+}

@@ -1,0 +1,10 @@
+// Default theme: prototyping
+// See https://www.radix-ui.com/colors/docs/overview/usage
+
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+
+:root, :root.theme-prototype {
+  --base-bg: var(--gray-1);
+  --base-text: var(--gray-12);
+}

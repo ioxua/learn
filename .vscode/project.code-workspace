@@ -6,7 +6,11 @@
     },
     {
       "name": "webapp",
-      "path": "../apps/web"
+      "path": "../packages/webapp"
+    },
+    {
+      "name": "content",
+      "path": "../packages/content"
     },
   ],
   "settings": {
@@ -16,8 +20,7 @@
       "**/.hg": true,
       "**/CVS": true,
       "**/.DS_Store": true,
-      "**/Thumbs.db": true,
-      "packages/": true
+      "**/Thumbs.db": true
     }
   }
 }
